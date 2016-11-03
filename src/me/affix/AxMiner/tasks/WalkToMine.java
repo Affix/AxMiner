@@ -73,6 +73,6 @@ public class WalkToMine extends Task<ClientContext> {
     @Override
     public void execute(){
         if(!ctx.players.local().inMotion())
-            ctx.movement.newTilePath(toMineTile).traverse();
+            ctx.movement.newTilePath(toMineTile).randomize(1,1).traverse();
     }
 }
