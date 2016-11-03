@@ -27,7 +27,9 @@ import java.util.Arrays;
 import java.util.List;
 
 
-@Script.Manifest(name="AxMiner", description="Mines Iron Ore at Al Kharid")
+@Script.Manifest(name="AxMiner",
+        properties = "author=Aff1x; topic=1322609; client=6;",
+        description="Mines and Banks Iron Ore at Al Kharid")
 
 public class AxMiner extends PollingScript<ClientContext> implements MessageListener, PaintListener {
 
